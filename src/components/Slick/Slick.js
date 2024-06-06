@@ -11,7 +11,8 @@ import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 import Product from "../Product/Product";
 
-const Slick = () => {
+const Slick = ({ data }) => {
+    console.log(data)
     const [isOpen, setIsOpen] = useState(false);
 
     const SampleNextArrow = ({ className, style, onClick }) => {
@@ -19,7 +20,7 @@ const Slick = () => {
             <div>
                 <FontAwesomeIcon
                     className={className}
-                    style={{ ...style, color: "green", height: "35px", width: "35px", marginRight: "-1rem"}}
+                    style={{ ...style, color: "green", height: "35px", width: "35px", marginRight: "-1rem" }}
                     onClick={onClick}
                     icon={faCircleChevronRight}
                 />
@@ -32,7 +33,7 @@ const Slick = () => {
             <div>
                 <FontAwesomeIcon
                     className={className}
-                    style={{ ...style, color: "green", height: "35px", width: "35px", marginLeft: "-1rem"}}
+                    style={{ ...style, color: "green", height: "35px", width: "35px", marginLeft: "-1rem" }}
                     onClick={onClick}
                     icon={faCircleChevronLeft}
                 />
@@ -53,9 +54,9 @@ const Slick = () => {
     return (
         <div className="slider-container">
             <Slider {...settings}>
-                <div className="h-30">
+                {/* <div className="h-30">
                     <button className="h-full flex justify-center items-center" onClick={() => setIsOpen(true)}>
-                       <Product/>
+                        <Product />
                     </button>
                 </div>
                 <div className="h-30">
@@ -82,7 +83,11 @@ const Slick = () => {
                     <button className="h-full flex justify-center items-center" onClick={() => setIsOpen(true)}>
                         <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/02/game-hot-thumb.jpg" />
                     </button>
-                </div>
+                </div> */}
+
+                {data.map((game, index) => (
+                    <Product key={index} game={{...game}}/>
+                ))}
             </Slider>
 
             <ModalVideo

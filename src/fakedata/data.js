@@ -1,57 +1,26 @@
 import supremeDuelist from "@/assets/img/supreme-duelist.png"
+import supremeDuelistVideo from "@/assets/img/supreme-duelist-video.jpg";
 
 export const topRatedGame = [
     {
-        video: "https://youtu.be/uLWlzpNXrBM",
+        imgVideo: supremeDuelistVideo,
+        video: "uLWlzpNXrBM",
         logo: supremeDuelist,
         nameGame: "Supreme Duelist",
         typeGame: "Action",
         rateGame: 4.3,
     },
     {
-        video: "https://youtu.be/uLWlzpNXrBM",
+        imgVideo: supremeDuelistVideo,
+        video: "uLWlzpNXrBM",
         logo: supremeDuelist,
         nameGame: "Supreme Duelist",
         typeGame: "Action",
         rateGame: 4.3,
-    },    {
-        video: "https://youtu.be/uLWlzpNXrBM",
-        logo: supremeDuelist,
-        nameGame: "Supreme Duelist",
-        typeGame: "Action",
-        rateGame: 4.3,
-    },    {
-        video: "https://youtu.be/uLWlzpNXrBM",
-        logo: supremeDuelist,
-        nameGame: "Supreme Duelist",
-        typeGame: "Action",
-        rateGame: 4.3,
-    },    {
-        video: "https://youtu.be/uLWlzpNXrBM",
-        logo: supremeDuelist,
-        nameGame: "Supreme Duelist",
-        typeGame: "Action",
-        rateGame: 4.3,
-    },    {
-        video: "https://youtu.be/uLWlzpNXrBM",
-        logo: supremeDuelist,
-        nameGame: "Supreme Duelist",
-        typeGame: "Action",
-        rateGame: 4.3,
-    },    {
-        video: "https://youtu.be/uLWlzpNXrBM",
-        logo: supremeDuelist,
-        nameGame: "Supreme Duelist",
-        typeGame: "Action",
-        rateGame: 4.3,
-    },    {
-        video: "https://youtu.be/uLWlzpNXrBM",
-        logo: supremeDuelist,
-        nameGame: "Supreme Duelist",
-        typeGame: "Action",
-        rateGame: 4.3,
-    },    {
-        video: "https://youtu.be/uLWlzpNXrBM",
+    },
+    {
+        imgVideo: supremeDuelistVideo,
+        video: "uLWlzpNXrBM",
         logo: supremeDuelist,
         nameGame: "Supreme Duelist",
         typeGame: "Action",

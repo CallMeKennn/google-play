@@ -2,6 +2,7 @@ import Header from "@/components/Header/Header";
 import Slick from "@/components/Slick/Slick";
 import "./globals.css";
 import "./globalsicon.css";
+import { topRatedGame } from "@/fakedata/data";
 
 export default function Home() {
     return (
@@ -40,7 +41,7 @@ export default function Home() {
                 {/* Top-rated games */}
                 <div className="mt-7 text-2xl font-medium">
                     <h2>Top-rated games</h2>
-                    <Slick/>
+                    <Slick data={topRatedGame}/>
                 </div>
             </div>
         </div>
