@@ -9,6 +9,11 @@ import { faCircleQuestion, faCircleUser } from "@fortawesome/free-regular-svg-ic
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState(1);
+
+    const handleClick = (index) => {
+        setSelectedIndex(index);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -28,26 +33,70 @@ const Header = () => {
     }, []);
 
     return (
-        <div className={`bg-orange-400 h-16 flex items-center justify-between fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
+        <div
+            className={`h-16 flex items-center justify-between fixed w-full z-10 transition-all duration-300 ${
+                isScrolled ? "shadow-lg" : ""
+            }`}
+        >
             <div className="flex h-full items-center w-1/4 justify-between ml-8">
                 <img className="h-10 object-cover object-center m-0" src={logo.src} />
                 <ul className="flex h-full ml-6">
-                    <li className="bg-green-300 w-20 h-full flex justify-center items-center cursor-pointer">Games</li>
-                    <li className="bg-green-300 w-20 h-full flex justify-center items-center cursor-pointer">Apps</li>
-                    <li className="bg-green-300 w-20 h-full flex justify-center items-center cursor-pointer">Moives</li>
-                    <li className="bg-green-300 w-20 h-full flex justify-center items-center cursor-pointer">Books</li>
-                    <li className="bg-green-300 w-20 h-full flex justify-center items-center cursor-pointer">Kids</li>
+                    <li
+                        onClick={() => handleClick(1)}
+                        key={1}
+                        className={` w-20 h-full font-medium flex justify-center items-center cursor-pointer ${
+                            selectedIndex === 1 ? "text-[#01875F]" : ""
+                        }`} 
+                    >
+                        Games
+                    </li>
+                    <li
+                        onClick={() => handleClick(2)}
+                        key={2}
+                        className={` w-20 h-full font-medium flex justify-center items-center cursor-pointer ${
+                            selectedIndex === 2 ? "text-[#01875F]" : ""
+                        }`}
+                    >
+                        Apps
+                    </li>
+                    <li
+                        onClick={() => handleClick(3)}
+                        key={3}
+                        className={` w-20 h-full font-medium flex justify-center items-center cursor-pointer ${
+                            selectedIndex === 3 ? "text-[#01875F]" : ""
+                        }`}
+                    >
+                        Moives
+                    </li>
+                    <li
+                        onClick={() => handleClick(4)}
+                        key={4}
+                        className={` w-20 h-full font-medium flex justify-center items-center cursor-pointer ${
+                            selectedIndex === 4 ? "text-[#01875F]" : ""
+                        }`}
+                    >
+                        Books
+                    </li>
+                    <li
+                        onClick={() => handleClick(5)}
+                        key={5}
+                        className={` w-20 h-full font-medium flex justify-center items-center cursor-pointer ${
+                            selectedIndex === 5 ? "text-[#01875F]" : ""
+                        }`}
+                    >
+                        Kids
+                    </li>
                 </ul>
             </div>
-            <div className="flex">
+            <div className="flex mr-8 w-1/12 h-full items-center justify-around">
                 <div>
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    <FontAwesomeIcon icon={faMagnifyingGlass} size="xl" className="text-[#5f6368] cursor-pointer    " />
                 </div>
                 <div>
-                    <FontAwesomeIcon icon={faCircleQuestion} />
+                    <FontAwesomeIcon icon={faCircleQuestion} size="xl" className="text-[#5f6368] cursor-pointer " />
                 </div>
                 <div>
-                    <FontAwesomeIcon icon={faCircleUser} />
+                    <FontAwesomeIcon icon={faCircleUser} size="xl" className="text-[#5f6368] cursor-pointer " />
                 </div>
             </div>
         </div>
