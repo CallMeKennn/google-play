@@ -1,4 +1,4 @@
-import supremeDuelist from "@/assets/img/supreme-duelist.png"
+import supremeDuelist from "@/assets/img/supreme-duelist.png";
 import supremeDuelistVideo from "@/assets/img/supreme-duelist-video.jpg";
 
 export const topRatedGame = [
@@ -26,4 +26,337 @@ export const topRatedGame = [
         typeGame: "Action",
         rateGame: 4.3,
     },
-]
+];
+
+export const topFree = [
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+];
+
+export const topGrossing = [
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+];
+
+export const topPaid = [
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+    {
+        logo: supremeDuelist,
+        nameGame: "Supreme Duelist",
+        typeGame: "Action",
+        rateGame: 4.3,
+    },
+];

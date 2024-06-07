@@ -35,7 +35,7 @@ const Header = () => {
     return (
         <div
             className={`h-16 flex items-center justify-between fixed w-full z-10 transition-all duration-300 ${
-                isScrolled ? "shadow-lg" : ""
+                isScrolled ? "bg-white shadow-lg" : ""
             }`}
         >
             <div className="flex h-full items-center w-1/4 justify-between ml-8">
@@ -44,7 +44,7 @@ const Header = () => {
                     <li
                         onClick={() => handleClick(1)}
                         key={1}
-                        className={` w-20 h-full font-medium flex justify-center items-center cursor-pointer ${
+                        className={`w-20 h-full font-medium flex justify-center items-center cursor-pointer ${
                             selectedIndex === 1 ? "text-[#01875F]" : ""
                         }`} 
                     >

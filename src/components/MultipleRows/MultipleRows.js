@@ -1,26 +1,12 @@
-"use client";
-
 import React from "react";
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleChevronRight, faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import ModalVideo from "react-modal-video";
-import "../../../node_modules/react-modal-video/scss/modal-video.scss";
-import Product from "../Product/Product";
+ import ProductTrend from "@/components/ProductTrend/ProductTrend";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleChevronRight, faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-const Slick = ({ data }) => {
-    console.log(data)
-    const [isOpen, setIsOpen] = useState(false);
-    const [videoId, setVideoId] = useState("")
-
-    const handleSelectVideo = (videoId) => {
-        setIsOpen(true)
-        setVideoId(videoId)
-    }
-
+function MultipleRows({data}) {
     const SampleNextArrow = ({ className, style, onClick }) => {
         return (
             <div>
@@ -48,32 +34,27 @@ const Slick = ({ data }) => {
     };
 
     const settings = {
-        dots: false,
+        className: "center",
+        centerMode: true,
         infinite: true,
-        speed: 500,
+        centerPadding: "60px",
         slidesToShow: 3,
-        slidesToScroll: 3,
+        speed: 500,
+        rows: 3,
+        slidesPerRow: 1,
+        slidesToScroll: 9,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
     };
-
     return (
         <div className="slider-container">
             <Slider {...settings}>
                 {data.map((game, index) => (
-                    <Product key={index} game={{...game}} onSelect={handleSelectVideo}/>
+                    <ProductTrend game={{ index, ...game }} />
                 ))}
             </Slider>
-
-            <ModalVideo
-                channel="youtube"
-                youtube={{ autoplay: 1, mute: 0 }}
-                isOpen={isOpen}
-                videoId={videoId}
-                onClose={() => setIsOpen(false)}
-            />
         </div>
     );
-};
+}
 
-export default Slick;
+export default MultipleRows;
