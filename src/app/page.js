@@ -6,14 +6,55 @@ import { useState } from "react";
 import Slick from "@/components/Slick/Slick";
 import "./globals.css";
 import "./globalsicon.css";
-import { topRatedGame, topFree, topPaid, topGrossing } from "@/fakedata/data";
+import { topRatedGame, topFree, topPaid, topGrossing, everyoneHands } from "@/fakedata/data";
 import Footer from "@/components/Footer/Footer";
+import Slider from "react-slick";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { faStar, faCircleChevronRight, faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
     const [selectedIndex, setSelectedIndex] = useState(1);
     const [data, setData] = useState(topFree);
     const [text, setText] = useState("Top free");
     const [selectDevice, setSelectDevice] = useState("");
+
+    const SampleNextArrow = ({ className, style, onClick }) => {
+        return (
+            <div>
+                <FontAwesomeIcon
+                    className={className}
+                    style={{ ...style, color: "green", height: "35px", width: "35px", marginRight: "-1rem" }}
+                    onClick={onClick}
+                    icon={faCircleChevronRight}
+                />
+            </div>
+        );
+    };
+
+    const SamplePrevArrow = ({ className, style, onClick }) => {
+        return (
+            <div>
+                <FontAwesomeIcon
+                    className={className}
+                    style={{ ...style, color: "green", height: "35px", width: "35px", marginLeft: "-1rem" }}
+                    onClick={onClick}
+                    icon={faCircleChevronLeft}
+                />
+            </div>
+        );
+    };
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 8,
+        slidesToScroll: 8,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+    };
 
     return (
         <div className="w-full flex justify-center">
@@ -227,6 +268,27 @@ export default function Home() {
                     <Slick data={topRatedGame} />
                 </div>
 
+                <div className="slider-container mt-7 text-2xl font-medium">
+                    <h2>In everyone's hands</h2>
+                    <Slider {...settings}>
+                        {everyoneHands.map((game, index) => (
+                            <div key={index} className="flex w-full mt-5">
+                                <div className="flex items-center flex-col ">
+                                    <img src={game.logo.src} className="w-28 h-auto object-cover object-center" />
+                                    <div className=" w-24">{game.nameGame}</div>
+                                    <div className="flex w-24 items-center">
+                                        <div className="text-base leading-none font-normal text-[#5f6368] mr-1">
+                                            {game.rateGame}
+                                        </div>
+                                        <FontAwesomeIcon icon={faStar} className="text-sm" />
+                                        <div className="text-sm ml-2">đ{game.price ?? game.price}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+
                 {/* Cartoony games */}
                 <div className="mt-7 text-2xl font-medium">
                     <h2>Cartoony games</h2>
@@ -239,8 +301,8 @@ export default function Home() {
                     <Slick data={topRatedGame} />
                 </div>
 
-                <Footer/>
-            </div>  
+                <Footer />
+            </div>
         </div>
     );
 }

@@ -6,17 +6,17 @@ const Footer = () => {
             <hr className="mb-10" />
             <div className="flex w-1/4 justify-between">
                 <ul>
-                    <li className="font-medium leading-7 text-[#5f6368]">Google Play</li>
-                    <li className="cursor-pointer leading-7 text-[#5f6368]">Play Pass</li>
-                    <li className="cursor-pointer leading-7 text-[#5f6368]">Play Points</li>
-                    <li className="cursor-pointer leading-7 text-[#5f6368]">Gift cards</li>
-                    <li className="cursor-pointer leading-7 text-[#5f6368]">Redeem</li>
-                    <li className="cursor-pointer leading-7 text-[#5f6368]">Refund policy</li>
+                    <li className="font-medium leading-7 text-[#5f6368] hover:text-[#056046]">Google Play</li>
+                    <li className="cursor-pointer leading-7 text-[#5f6368] hover:text-[#056046]">Play Pass</li>
+                    <li className="cursor-pointer leading-7 text-[#5f6368] hover:text-[#056046]">Play Points</li>
+                    <li className="cursor-pointer leading-7 text-[#5f6368] hover:text-[#056046]">Gift cards</li>
+                    <li className="cursor-pointer leading-7 text-[#5f6368] hover:text-[#056046]">Redeem</li>
+                    <li className="cursor-pointer leading-7 text-[#5f6368] hover:text-[#056046]">Refund policy</li>
                 </ul>
                 <ul>
-                    <li className="font-medium leading-7 text-[#5f6368]">Kids & family</li>
-                    <li className="cursor-pointer leading-7 text-[#5f6368]">Parent Guide</li>
-                    <li className="cursor-pointer leading-7 text-[#5f6368]">Family sharing</li>
+                    <li className="font-medium leading-7 text-[#5f6368] hover:text-[#056046]">Kids & family</li>
+                    <li className="cursor-pointer leading-7 text-[#5f6368] hover:text-[#056046]">Parent Guide</li>
+                    <li className="cursor-pointer leading-7 text-[#5f6368] hover:text-[#056046]">Family sharing</li>
                 </ul>
             </div>
             <div className="w-full flex justify-between mt-10">
